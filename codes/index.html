@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Background Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background elements */
+        .bg-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .bg-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        .bg-element:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .bg-element:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 70%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+        
+        .bg-element:nth-child(3) {
+            width: 150px;
+            height: 150px;
+            top: 40%;
+            left: 80%;
+            animation-delay: 4s;
+        }
+        
+        .bg-element:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 80%;
+            left: 70%;
+            animation-delay: 6s;
+        }
+        
+        .bg-element:nth-child(5) {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            left: 60%;
+            animation-delay: 8s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 0.8;
+            }
+        }
+        
+        /* Content styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background elements -->
+    <div class="bg-elements">
+        <div class="bg-element"></div>
+        <div class="bg-element"></div>
+        <div class="bg-element"></div>
+        <div class="bg-element"></div>
+        <div class="bg-element"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>Aesthetic Background Theme</h1>
+            <p>A beautiful gradient background with floating elements</p>
+        </header>
+        
+        <div class="card">
+            <h2>Welcome to Your New Design</h2>
+            <p>This template features a stunning purple gradient background with animated floating elements. The design is modern, clean, and provides a great foundation for your content.</p>
+            <p>The background uses CSS gradients and animations to create a dynamic, engaging experience without heavy images or videos.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        
+        <div class="card">
+            <h2>Customization Options</h2>
+            <p>You can easily customize this theme by changing the gradient colors, adjusting the floating elements, or modifying the card styles.</p>
+            <p>The design is fully responsive and works well on all device sizes.</p>
+            <a href="#" class="btn">Explore Features</a>
+        </div>
+        
+        <div class="card">
+            <h2>Get Started</h2>
+            <p>Start building your project with this aesthetic background theme. Add your own content, images, and functionality to create something amazing.</p>
+            <a href="#" class="btn">Start Now</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Aesthetic Theme. All rights reserved.</p>
+    </footer>
+</body>
+</html>
